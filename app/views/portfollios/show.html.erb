@@ -1,7 +1,8 @@
+<%= image_tag @portfolio.main_image if @portfolio.main_image.present? %>
+
 <%= render 'portfolio', portfolio: @portfolio %>
 
 <div>
-  <%= link_to "Edit this Portfolio", edit_portfollio_path(@portfolio) %> |
   <%= link_to "Back to Portfolio", portfollios_path %>
 
   <%= button_to "Destroy this Portfolio", @portfolio, method: :delete %>

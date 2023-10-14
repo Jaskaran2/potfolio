@@ -1,9 +1,9 @@
 <h1> Portfolio </h1>
 
+<%= link_to "New Portfollio", new_portfollio_path %>
+
 <% @portfolios.each do |portfolio| %>
   <%= render 'portfolio', portfolio: portfolio %>
 
-  <p><%= link_to "Show this  Portfolio", portfolio %></p>
+  <p><%= link_to "Edit this Portfolio", edit_portfollio_path(portfolio) %> </p>
 <% end %>
-
-<%= link_to "New Portfollio", new_portfollio_path %>
