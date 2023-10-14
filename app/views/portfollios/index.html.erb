@@ -6,4 +6,5 @@
   <%= render 'portfolio', portfolio: portfolio %>
 
   <p><%= link_to "Edit this Portfolio", edit_portfollio_path(portfolio) %> </p>
+  <p><%= button_to "Delete Portfolio", portfollio_path(portfolio), method: :delete, data: {confrim: 'Are you sure?'} %></p>
 <% end %>
